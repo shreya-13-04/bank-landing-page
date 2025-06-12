@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Banking Application</title>
+        <style>
+            h1{
+                text-align: center;
+                background-color: rgb(115, 161, 192);
+                color:rgb(34, 35, 36);
+                padding:20px 10px;
+                border-style:dotted;
+                padding-top: 20px;
+                letter-spacing: 5px;
+                line-height: 3;
+            }
+            nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+            nav a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 20px;
+        }
+        .container {
+            margin: 20px auto;
+            width: 80%;
+        }
+        form {
+            border: 1px solid #cee2e5;
+            padding: 20px;
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #2471c4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body style="background-color: rgba(120, 188, 234, 0.534);">
+        
+        <h1>STATE BANK OF INDIA</h1>
+        <br>
+        <img src="sbi-logo-33237.png" alt="Bank Logo" style="position: absolute; top: 35px; right: 20px; width: 100px;">
+  
+        <center><p style="font-size: 20px; line-height: 150%; ">State Bank of India (SBI) is an Indian multinational public sector bank and
+            <br> financial services statutory body headquartered in Mumbai, Maharashtra. <br>
+            SBI is the 45th largest bank in the world by total assets and ranked 221st in the Fortune Global 500.
+        </p>
+        
+
+        <h2 style="background-color: rgba(80, 149, 195, 0.534); border-radius: 30px;"  >MOST TRUSTED BANK OF INDIA</h2>
+        <table >
+            <tr>
+                <th>
+        <h4>Bank’s President </h4>
+        <img src="images.jpeg">
+        </th>
+        
+        <th>
+                    <h4> Vice-presidents name</h4>
+        <img src="images (1).jpeg">
+        </th>
+        </tr>
+       </table>
+            </center>
+           <center> <nav>
+                <a href="#contact">Contact Us</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#apply">Apply for Our Products</a>
+            </nav>
+            <div class="container" id="apply">
+                <h2>Apply for Our Products</h2>
+                <form action="#">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="address">ADDRESS</label>
+                    <textarea id="address" name="address" rows="4" required></textarea><br>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone"><br>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="age">AGE</label>
+                    <input type="number" id="age" name="age" min="18" required><br>
+                    <label for="dob">DATE OF BIRTH</label>
+                    <input type="date" id="dob" name="dob" required><br>
+                    <label for="product">PRODUCT INTERESTED</label>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Select Product</option>
+                        <option value="Core Banking">Core Banking</option>
+                        <option value="Home Loan">Home Loan</option>
+                        <option value="Car Loan">Car Loan</option>
+                        <option value="Reverse Mortgaging">Reverse Mortgaging</option>
+                    </select><br>
+                    <button type="button" onclick="clearForm()">Clear</button>
+                    <button type="submit" onclick="done()">Submit</button>
+                </form>
+                <script>
+                    function clearForm(){
+                        document.getElementById("fname").value="";
+                        document.getElementById("lname").value="";
+                        document.getElementById("address").value="";
+                        document.getElementById("phone").value="";
+                        document.getElementById("email").value="";
+                        document.getElementById("age").value="";
+                        document.getElementById("dob").value="";
+                        document.getElementById("product").value="";
+
+
+                    }
+                    function done(){
+                        alert("Successful submission, Application is under process")
+                    }
+                </script>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container" id="contact">
+                <h2>Contact Us</h2>
+                <p>Address: 123 Bank Street, Cityville, Country</p>
+                <p>Email: info@bank.com</p>
+                <p>Phone: +1234567890</p>
+                <p>Social Media: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+            </div>
+            </center>
+    </body>
+</html>
